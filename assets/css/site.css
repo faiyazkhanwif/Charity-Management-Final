@@ -1,0 +1,159 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FFF;
+}
+body { padding-top: 70px; }
+
+table {
+  text-align: center;
+}
+.btncmn {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+.btncmn:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+#hrefUpd {
+  width: 30%;
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+#hrefUpd:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+#bckbtn {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+#bckbtn:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+#updateBtn {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+#updateBtn:hover {
+  background-color: darkcyan;
+  color: white;
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+.navbtn {
+  transition: all .4s;
+}
+.navbtn:hover {
+  background-color: #737373;
+  border-radius: 8px;
+  transform: translateY(-1px);
+}
+.dbtn{
+  transition: all .4s;
+}
+.dbtn:hover {
+  background-color: #737373;
+  color: white;
+  transform: translateY(-1px);
+}
+.table-responsive {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+.table-responsive:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/*.dl-horizontal dt {
+    white-space: normal;
+}*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+.nmrow{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.footer{
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.section {
+  padding: 30px 0;
+  position: relative;
+  background-color: #f4f3ef;
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%); }
+
+.section-with-space {
+  padding: 60px 0; }
+
+.section-gray {
+  background-color: #EEEEEE; }
+
+.section-white {
+  background-color: #FFFFFF; }
+
+.section-nude {
+  background-color: #FFFCF5; }
+
+.section-light-brown {
+  background-color: #D8C1AB;
+  color: #FFFFFF; }
+
+.section-brown {
+  background-color: #A59E94;
+  color: #FFFFFF; }
+
+.section-light-blue {
+  background-color: #7A9E9F;
+  color: #FFFFFF; }
+
+.section-dark-blue {
+  background-color: #506367;
+  color: #FFFFFF; }
+
+.section-dark {
+  background-color: #1a1817;
+  color: #FFFFFF; }
+
+.navbar-nav {
+    flex-direction: row;
+}
+  
+.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+  
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+}

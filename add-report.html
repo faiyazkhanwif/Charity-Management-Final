@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Add Report</title>
+	<link rel="icon" type="image/x-icon" href="icons\favi.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+	<link rel="stylesheet" href="nucleo/css/nucleo.css">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"><i class="fas fa-hand-holding-heart"></i> huhu</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container mb-5">
+		<h3>Meeting Report</h3>
+		<hr>
+		<form>
+			<div class="">
+				<div class="form-group row">
+					<label for="rp-title" class="col-sm-3 col-form-label">Topic</label>
+					<div class="col-sm-9">
+						<input type="text" id="rp-title" class="form-control" autocomplete="off">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group row">
+							<label for="" class="col-sm-3 col-form-label">Date</label>
+							<div class="col-sm-9">
+								<input type="date" id="rp-date" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group row">
+							<label for="" class="col-sm-3 col-form-label">Time</label>
+							<div class="col-sm-9">
+								<input type="time" id="rp-time" class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="" class="col-sm-3 col-form-label">Objective</label>
+					<div class="col-sm-9">
+						<textarea id="rp-obj" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="" class="col-sm-3 col-form-label">Location</label>
+					<div class="col-sm-9">
+						<input type="text" id="rp-title" class="form-control" autocomplete="off">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="" class="col-sm-3 col-form-label">Upload File</label>
+					<div class="col-sm-9">
+						<div class="custom-file">
+						  <input type="file" class="custom-file-input" id="customFile">
+						  <label class="custom-file-label" for="customFile">Choose file</label>
+						</div>
+					</div>
+				</div>
+				<div class="text-center mt-5">
+					<input type="button" id="submit-btn" onclick="rpSubmit()" class="btn btn-outline-success btn-lg btncmn" value="Save Report" >
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		
+		function rpSubmit(){
+			var rptitle = $('#rp-title').val();
+			var rpdate = $('#rp-date').val();
+			var rptime = $('#rp-time').val();
+			var rpbody = $('#rp-body').val();
+			var rpobj = $('#rp-obj').val();
+			var rpconc = $('#rp-conclusion').val();
+
+			console.log(rptitle);
+			console.log(rpdate);
+			console.log(rptime);
+			console.log(rpbody);
+			console.log(rpobj);
+			console.log(rpconc);
+
+			// if report successfully submit-btn
+			var reportId = 'RP0'+randomId();
+			alert('Successfully created. Report ID : '+reportId);
+			window.close();
+
+		}
+
+		function randomId(){
+			return Math.floor(Math.random()*(100-1)+1);
+		}
+
+		function addHtmlTableRow()
+            {
+                // get the table by id
+                // create a new row and cells
+                // get value from input text
+                // set the values into row cell's
+                if(!checkEmptyInput()){
+                    var newRow = data-table.insertRow(1),
+                        cell1 = newRow.insertCell(0),
+                        cell2 = newRow.insertCell(1),
+                        cell3 = newRow.insertCell(2),
+                        cell3 = newRow.insertCell(3),
+                        fname = document.getElementById("").value,
+                        lname = document.getElementById("").value,
+                        age = document.getElementById("").value;
+                
+                    cell1.innerHTML = fname;
+                    cell2.innerHTML = lname;
+                    cell3.innerHTML = age;
+                    // call the function to set the event to the new row
+                    selectedRowToInput();
+                }
+            }
+	</script>
+</body>
+
+</html>
