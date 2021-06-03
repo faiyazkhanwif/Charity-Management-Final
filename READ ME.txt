@@ -1,0 +1,13 @@
+kindly use the credentials from the config.php file to add privilage after importing the database. Kindly use "charitymanagement.sql" to import the database.
+
+PARTS THAT HAS BEEN COVERED:
+
+ii. User Profile 
+	Showing and editing User profile, Updating user profile, deleting user profile.
+
+iii. Volunteer management 
+	 Adding new volunteers to database, Updating and editing volunteer profiles. Deleting volunteers from database.
+	 Assigning volunteers to projects. Removing volunteers from projects.
+
+PARTS INCOMPLETE:
+i. Projects-Project reports.
