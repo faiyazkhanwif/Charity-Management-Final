@@ -1,8 +1,8 @@
 <?php
 $databaseHost = 'localhost';
 $databaseName = 'charitymanagement';
-$databaseUser = 'ykchiam';
-$databasePass = 'chiam123';
+$databaseUser = 'root';
+$databasePass = '';
 
 $conn = mysqli_connect($databaseHost, $databaseUser, $databasePass, $databaseName);
 if (!$conn) {
